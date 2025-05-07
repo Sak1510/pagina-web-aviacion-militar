@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    width: 90%;
+    display: flex;
+    height: auto;
+    padding: 20px;
+    margin: 20px 0px;
+}
+
+section, main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 100%;
+    
+    opacity: 0;
+    visibility: hidden;
+    height: 0px;
+    transition: all 500ms ease;
+
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+
+section:hover main, section:focus main {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    
+    pointer-events: none;
+}
+
+.pais {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border: 5px solid;
+    border-radius: 30px;
+}
+
+.bandera {
+    height: 120px;
+    width: auto;
+    box-shadow: none;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+article {
+    border: 1px solid;
+    height: 500px;
+    width: 100%;
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.descripcion, .imagen {
+    width: 40%;
+    margin: 5%;
+}
+
+p {
+    text-align: justify;
+}
+
+.avion {
+    height: 100%;
+    width: auto;
+}
+
+h3 {
+    font-size: 30px;
+    color: rgb(70, 130, 180);
+    width: 100%;
+    text-align: center;
+}

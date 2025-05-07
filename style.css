@@ -1,0 +1,86 @@
+/* Aplicable a toda la pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    height: 100vh;
+    background-color:rgb(30, 30, 30);
+}
+
+
+/* Estilos comunes */
+h1 {
+    padding: 10px;
+    width: 100%;
+
+    font-size: 4em;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-bottom: 3px solid white;
+}
+
+img {
+    box-shadow: 10px 10px 5px black;
+}
+
+
+p, li {
+    margin: 40px 20px;
+
+    color: rgb(166, 166, 166);
+    font-size: 1.5em;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+li {
+    margin: 10px;
+}
+
+/*Links*/
+a {
+    width: 100%;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+a:link, a:visited, a:active {
+    color: rgb(70, 130, 180);
+}
+
+a:hover {
+    color: rgb(212, 175, 55);
+}
+
+/* Pie de pagina */
+footer {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 3px solid black;
+    background-color: black;   
+}
+
+footer > * {
+    width: 50%;
+    text-align: center;
+    color: white;
+}
+
+/*Clases globales*/
+.img-desc {
+    margin: 10px;
+    text-align: center;
+
+    color: rgb(255, 36, 0);
+    font-size: 1em;
+}
